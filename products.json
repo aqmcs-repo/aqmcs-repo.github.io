@@ -1,0 +1,14 @@
+{
+  "PRODUCTS": [
+    {
+      "ID": 000001,
+      "CATEGORY": "CERVEZAS",
+      "UNIT": "LATA",
+      "NAME": "Cerveza La Bala 330ml",
+      "DESCRIPTION": "",
+      "NEW_PRICE": 0.00,
+      "SELL_PRICE": 410.00,
+      "IS_OFERT": false
+    }
+  ]
+}
