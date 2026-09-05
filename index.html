@@ -1,22 +1,149 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
-  <title>AQM!</title>
-  <style>
-    :root {--color-green:#00674F}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+    <title>AQM!</title>
+    <style>
+        :root{--color-green:#00674F;--color-cream:#EDE8DF;--color-terracota:#D86A4A;--color-ink:#000000}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--color-cream);color:var(--color-ink);min-height:100vh;display:flex;flex-direction:column}
+        .top-bar{position:sticky;top:0;left:0;width:100%;height:10vh;min-height:60px;max-height:100px;background:var(--color-green);display:flex;align-items:center;justify-content:space-between;padding:0 20px;z-index:100}
+        .top-bar .icon-logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--color-terracota)}
+        .top-bar .icon-logo img{width:7vh;height:7vh;border-radius:50%;background:var(--color-cream);display:flex;align-items:center;justify-content:center}
+        .top-bar .market-name{font-weight:700;font-size:1.4rem;letter-spacing:-0.5px;color:var(--color-cream);display:flex;align-items:center;gap:6px;}
+        
+        
+        
+        .product-grid {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 20px 14px 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+            gap: 20px 16px;
+            width: 100%;
+            flex: 1;
+        }
+        
+        
+        
+        
+        
+        
+        .footer-note{text-align:center;height:10vh;min-height:60px;max-height:100px;padding:24px 16px 20px;font-size:1.5vh;color:var(--color-green);border-top:3px solid rgba(0, 103, 79, 0.08);background:var(--color-cream);margin-top:8px;letter-spacing:0.2px}
+        .footer-note .copyright{}
+        .footer-note .social-media{font-size:2vh}
+        .footer-note .social-media img{width:2vh;height:2vh;border:1px solid}
+        .footer-note .whatsapp{color:green}
+        .footer-note .instagram{color:red}
+    </style>
 </head>
 <body>
-  <!-- ===== BARRA SUPERIOR ===== -->
-  <header class="top-bar" role="banner">
-    <div class="market-name">
-      <i class="fas fa-store-alt"></i> AquiMismo!
-    </div>
-    <button class="menu-toggle" aria-label="Menú" id="menuButton">
-      <i class="fas fa-bars"></i>
-    </button>
-  </header>
+    <!-- ===== BARRA SUPERIOR ===== -->
+    <header class="top-bar" role="banner">
+        <div class="icon-logo">
+            <img src="img/logo.png" alt="AQM-logo">
+        </div>
+        <div class="market-name">AquiMismo!</div>
+    </header>
+    <!-- ===== GRID DE PRODUCTOS ===== -->
+    <main class="product-grid" role="main" aria-label="Productos del mercado" id="productGrid"></main>
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer-note">
+        <div class="social-media">
+            <a class="whatsapp" href="">
+                <img src="img/whatsapp-logo.png" alt="WhatsApp-logo">WHATSAPP
+            </a>
+            <a class="instagram" href="">
+                <img src="img/instagram-logo.png" alt="Instagram-logo">INSTAGRAM
+            </a>
+        </div>
+        <div class="copyright">
+            Mercados AquiMismo!<br>Copyright 2026, AquiMismo T.C.P (AQM)<br>Todos los Derechos Reservados
+        </div>
+    </footer>
+    <script>
+        (function() {
+            'use strict';
+            const grid = document.getElementById('productGrid');
+            
+            // Función para cargar y renderizar productos
+            async function cargarProductos() {
+                try {
+                    // Cargar el archivo JSON
+                    const response = await fetch('productos.json');
+                    if (!response.ok) {
+                        throw new Error(`Error al cargar productos: ${response.status}`);
+                    }
+                    const data = await response.json();
+                    renderizarProductos(data.PRODUCTS);
+                } catch (error) {
+                    console.error('Error:', error);
+                    grid.innerHTML = `<div class="status-message">Error al cargar los productos. Por favor, intenta de nuevo.</div>`;
+                }
+            }
+            
+            function renderizarProductos(productos) {
+                if (!productos || productos.length === 0) {
+                    grid.innerHTML = `<div class="status-message">No hay productos disponibles en este momento.</div>`;
+                    return;
+                }
+                
+                grid.innerHTML = '';
+                productos.forEach(prod => {
+                    const id = prod.ID || '';
+                    const nombre = prod.NAME || 'Nombre no disponible';
+                    const precio = prod.STANDARD_PRICE || 0;
+                    const precioRebaja = prod.OFERT_PRICE || 0;
+                    const categoria = prod.CATEGORY || '';
+                    const esOferta = prod.IS_OFERT === true || (precioRebaja > 0 && precioRebaja < precio);
+                    
+                    // Ícono según categoría
+                    let icono = 'fa-box';
+                    const catLower = (categoria || '').toLowerCase();
+                    if (catLower.includes('cervezas')) icono = 'fa-beer';
+                    else if (catLower.includes('bebidas')) icono = 'fa-wine-bottle';
+                    
+                    // Verificar si tiene precio anterior
+                    const tienePrecioAnterior = precioRebaja > 0 && precioRebaja < precio;
+                    
+                    const card = document.createElement('article');
+                    card.className = 'product-card';
+                    
+                    let offerHtml = '';
+                    if (esOferta) {
+                        offerHtml = `<span class="offer-tag"><i class="fas fa-tag"></i> Oferta</span>`;
+                    }
+                    
+                    const precioFormateado = precio.toFixed(2);
+                    const precioAntFormateado = precioRebaja > 0 ? precioRebaja.toFixed(2) : '';
+                    
+                    card.innerHTML = `
+                        ${offerHtml}
+                        <div class="product-image">
+                            <div class="photo-placeholder">
+                                <i class="fas ${icono}"></i>
+                                <span class="product-id">${id ? '#' + String(id).padStart(6, '0') : ''}</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">${nombre}</h3>
+                            <div class="product-price">
+                                $${precioFormateado}
+                                ${tienePrecioAnterior ? `<span class="old-price">$${precioAntFormateado}</span>` : ''}
+                            </div>
+                            ${categoria ? `<span class="product-category">${categoria}</span>` : ''}
+                        </div>
+                    `;
+                    
+                    grid.appendChild(card);
+                });
+            }
+            
+            // Cargar productos al iniciar
+            cargarProductos();
+        })();
+    </script>
 </body>
 </html>
