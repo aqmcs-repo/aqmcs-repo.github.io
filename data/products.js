@@ -11,7 +11,7 @@ const productosData = {
             "STANDARD_PRICE": 410,
             "IS_OFERT": false,
             "IS_NEW": false
-        }
+        },
         {
             "ID": 000002,
             "CATEGORY": "BEBIDAS ALCOHÓLICAS",
@@ -25,4 +25,4 @@ const productosData = {
             "IS_NEW": false
         }
     ]
-}
+};
