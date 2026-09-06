@@ -63,86 +63,89 @@
             Mercados AquiMismo!<br>Copyright 2026, AquiMismo T.C.P (AQM)<br>Todos los Derechos Reservados
         </div>
     </footer>
+    <script src="data/products.js"></script>
     <script>
         (function() {
             'use strict';
             const grid = document.getElementById('productGrid');
             
-            // Función para cargar y renderizar productos
-            async function cargarProductos() {
+            function renderizarProductos() {
                 try {
-                    // Cargar el archivo JSON
-                    const response = await fetch('productos.json');
-                    if (!response.ok) {
-                        throw new Error(`Error al cargar productos: ${response.status}`);
+                    // Verificar que los datos existan
+                    if (!productosData || !productosData.PRODUCTS) {
+                        grid.innerHTML = `<div class="status-message">Error: No se pudieron cargar los productos.</div>`;
+                        return;
                     }
-                    const data = await response.json();
-                    renderizarProductos(data.PRODUCTS);
+                    
+                    const productos = productosData.PRODUCTS;
+                    
+                    if (!productos || productos.length === 0) {
+                        grid.innerHTML = `<div class="status-message">No hay productos disponibles en este momento.</div>`;
+                        return;
+                    }
+                    
+                    grid.innerHTML = '';
+                    productos.forEach(prod => {
+                        const id = prod.ID || '';
+                        const nombre = prod.NAME || 'Nombre no disponible';
+                        const precio = prod.STANDARD_PRICE || 0;
+                        const precioRebaja = prod.OFERT_PRICE || 0;
+                        const categoria = prod.CATEGORY || '';
+                        const esOferta = prod.IS_OFERT === true || (precioRebaja > 0 && precioRebaja < precio);
+                        
+                        // Ícono según categoría
+                        let icono = 'fa-box';
+                        const catLower = (categoria || '').toLowerCase();
+                        if (catLower.includes('cervezas')) icono = 'fa-beer';
+                        else if (catLower.includes('bebidas alcohólicas')) icono = 'fa-wine-bottle';
+                        else if (catLower.includes('bebidas')) icono = 'fa-wine-bottle';
+                        
+                        // Verificar si tiene precio anterior
+                        const tienePrecioAnterior = precioRebaja > 0 && precioRebaja < precio;
+                        
+                        const card = document.createElement('article');
+                        card.className = 'product-card';
+                        
+                        let offerHtml = '';
+                        if (esOferta) {
+                            offerHtml = `<span class="offer-tag"><i class="fas fa-tag"></i> Oferta</span>`;
+                        }
+                        
+                        const precioFormateado = precio.toFixed(2);
+                        const precioAntFormateado = precioRebaja > 0 ? precioRebaja.toFixed(2) : '';
+                        
+                        card.innerHTML = `
+                            ${offerHtml}
+                            <div class="product-image">
+                                <div class="photo-placeholder">
+                                    <i class="fas ${icono}"></i>
+                                    <span class="product-id">${id ? '#' + String(id).padStart(6, '0') : ''}</span>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">${nombre}</h3>
+                                <div class="product-price">
+                                    $${precioFormateado}
+                                    ${tienePrecioAnterior ? `<span class="old-price">$${precioAntFormateado}</span>` : ''}
+                                </div>
+                                ${categoria ? `<span class="product-category">${categoria}</span>` : ''}
+                            </div>
+                        `;
+                        
+                        grid.appendChild(card);
+                    });
                 } catch (error) {
-                    console.error('Error:', error);
-                    grid.innerHTML = `<div class="status-message">Error al cargar los productos. Por favor, intenta de nuevo.</div>`;
+                    console.error('Error al renderizar productos:', error);
+                    grid.innerHTML = `<div class="status-message">Error al cargar los productos. Por favor, recarga la página.</div>`;
                 }
             }
             
-            function renderizarProductos(productos) {
-                if (!productos || productos.length === 0) {
-                    grid.innerHTML = `<div class="status-message">No hay productos disponibles en este momento.</div>`;
-                    return;
-                }
-                
-                grid.innerHTML = '';
-                productos.forEach(prod => {
-                    const id = prod.ID || '';
-                    const nombre = prod.NAME || 'Nombre no disponible';
-                    const precio = prod.STANDARD_PRICE || 0;
-                    const precioRebaja = prod.OFERT_PRICE || 0;
-                    const categoria = prod.CATEGORY || '';
-                    const esOferta = prod.IS_OFERT === true || (precioRebaja > 0 && precioRebaja < precio);
-                    
-                    // Ícono según categoría
-                    let icono = 'fa-box';
-                    const catLower = (categoria || '').toLowerCase();
-                    if (catLower.includes('cervezas')) icono = 'fa-beer';
-                    else if (catLower.includes('bebidas')) icono = 'fa-wine-bottle';
-                    
-                    // Verificar si tiene precio anterior
-                    const tienePrecioAnterior = precioRebaja > 0 && precioRebaja < precio;
-                    
-                    const card = document.createElement('article');
-                    card.className = 'product-card';
-                    
-                    let offerHtml = '';
-                    if (esOferta) {
-                        offerHtml = `<span class="offer-tag"><i class="fas fa-tag"></i> Oferta</span>`;
-                    }
-                    
-                    const precioFormateado = precio.toFixed(2);
-                    const precioAntFormateado = precioRebaja > 0 ? precioRebaja.toFixed(2) : '';
-                    
-                    card.innerHTML = `
-                        ${offerHtml}
-                        <div class="product-image">
-                            <div class="photo-placeholder">
-                                <i class="fas ${icono}"></i>
-                                <span class="product-id">${id ? '#' + String(id).padStart(6, '0') : ''}</span>
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-name">${nombre}</h3>
-                            <div class="product-price">
-                                $${precioFormateado}
-                                ${tienePrecioAnterior ? `<span class="old-price">$${precioAntFormateado}</span>` : ''}
-                            </div>
-                            ${categoria ? `<span class="product-category">${categoria}</span>` : ''}
-                        </div>
-                    `;
-                    
-                    grid.appendChild(card);
-                });
+            // Ejecutar cuando el DOM esté listo
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', renderizarProductos);
+            } else {
+                renderizarProductos();
             }
-            
-            // Cargar productos al iniciar
-            cargarProductos();
         })();
     </script>
 </body>
