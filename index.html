@@ -1,57 +1,478 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
     <title>AQM!</title>
+	<!-- FAVICON -->
+	<link rel="icon" type="img/png" sizes="32x32" href="icon_32x32.png">
+	<link rel="icon" type="img/png" sizes="16x16" href="icon_16x16.png">
     <style>
-        :root{--color-green:#00674F;--color-cream:#EDE8DF;--color-terracota:#D86A4A;--color-ink:#000000}
-        *{margin:0;padding:0;box-sizing:border-box}
-        body{font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--color-cream);color:var(--color-ink);min-height:100vh;display:flex;flex-direction:column}
-        .top-bar{position:sticky;top:0;left:0;width:100%;height:10vh;min-height:60px;max-height:100px;background:var(--color-green);display:flex;align-items:center;justify-content:space-between;padding:0 20px;z-index:100}
-        .top-bar .icon-logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--color-terracota)}
-        .top-bar .icon-logo img{width:7vh;height:7vh;border-radius:50%;background:var(--color-cream);display:flex;align-items:center;justify-content:center}
-        .top-bar .market-name{font-weight:700;font-size:1.4rem;letter-spacing:-0.5px;color:var(--color-cream);display:flex;align-items:center;gap:6px;}
-        
-        
-        
+		/* ===== RESET & VARIABLES ===== */
+        :root {
+            --color-green: #00674F;
+            --color-cream: #EDE8DF;
+            --color-terracota: #D86A4A;
+            --color-ink: #1A2C2A;
+            --card-radius: 20px;
+            --shadow-light: 0 8px 22px rgba(0, 103, 79, 0.06), 0 2px 6px rgba(0, 103, 79, 0.04);
+            --shadow-hover: 0 16px 30px -10px rgba(0, 103, 79, 0.18);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--color-cream);
+            color: var(--color-ink);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ===== MENSAJES DE ESTADO ===== */
+        .status-message {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 48px 20px;
+            color: var(--color-terracota);
+            font-size: 1.2rem;
+        }
+
+        /* ===== TOP BAR ===== */
+        .top-bar {
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10vh;
+            min-height: 60px;
+            max-height: 100px;
+            background: var(--color-green);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .top-bar .icon-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .top-bar .icon-logo img {
+            width: 8vh;
+            height: 8vh;
+            max-width: 50px;
+            max-height: 50px;
+            object-fit: contain;
+        }
+
+        .top-bar .market-name {
+            font-weight: 700;
+            font-size: clamp(1.4rem, 5vh, 2.2rem);
+            letter-spacing: -0.5px;
+            color: var(--color-cream);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* ===== GRID DE PRODUCTOS ===== */
         .product-grid {
             max-width: 1280px;
             margin: 0 auto;
             padding: 20px 14px 40px;
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
-            gap: 20px 16px;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 22px 16px;
             width: 100%;
             flex: 1;
         }
-        
-        
-        
-        
-        
-        
-        .footer-note{text-align:center;height:10vh;min-height:60px;max-height:100px;padding:24px 16px 20px;font-size:1.5vh;color:var(--color-green);border-top:3px solid rgba(0, 103, 79, 0.08);background:var(--color-cream);margin-top:8px;letter-spacing:0.2px}
-        .footer-note .copyright{}
-        .footer-note .social-media{font-size:2vh}
-        .footer-note .social-media img{width:2vh;height:2vh;border:1px solid}
-        .footer-note .whatsapp{color:green}
-        .footer-note .instagram{color:red}
+
+        /* ===== TARJETA DE PRODUCTO ===== */
+        .product-card {
+            background: #FEFEFE;
+            border-radius: var(--card-radius);
+            box-shadow: var(--shadow-light);
+            overflow: hidden;
+            transition: all 0.25s ease;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(46, 125, 94, 0.12);
+            position: relative;
+            backdrop-filter: blur(2px);
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--color-terracota);
+        }
+
+        /* ===== IMAGEN ===== */
+        .product-image {
+            width: 100%;
+            aspect-ratio: 1/1;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+            padding: 12px;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.02);
+        }
+
+        /* ===== INFO DEL PRODUCTO ===== */
+        .product-info {
+            padding: 16px 14px 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            flex: 1;
+        }
+
+        /* --- NOMBRE CENTRADO --- */
+        .product-name {
+            font-weight: 700;
+            font-size: clamp(1.1rem, 3.2vh, 1.6rem);
+            line-height: 1.3;
+            color: var(--color-ink);
+            text-align: center;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            min-height: 2.8rem;
+            letter-spacing: -0.2px;
+            padding: 0 4px;
+        }
+
+        /* --- CATEGORÍA + UNIDAD (fila) --- */
+        .cu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px 12px;
+            margin-top: 4px;
+        }
+
+        .product-category {
+            font-size: clamp(0.7rem, 2vh, 0.95rem);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--color-ink);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 2px 10px 2px 6px;
+            background: rgba(0, 103, 79, 0.06);
+            border-radius: 40px;
+            font-weight: 500;
+        }
+
+        .product-category img {
+            width: clamp(20px, 3vh, 30px);
+            height: clamp(20px, 3vh, 30px);
+            object-fit: contain;
+        }
+
+        .product-unit {
+            font-size: clamp(0.7rem, 2vh, 0.95rem);
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            color: var(--color-ink);
+            font-weight: 500;
+            background: rgba(0, 0, 0, 0.03);
+            padding: 2px 10px 2px 6px;
+            border-radius: 40px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .product-unit img {
+            width: clamp(20px, 3vh, 30px);
+            height: clamp(20px, 3vh, 30px);
+            object-fit: contain;
+        }
+
+        /* --- PRECIO CENTRADO --- */
+        .product-price {
+            font-weight: 700;
+            font-size: clamp(1.3rem, 5vh, 2.2rem);
+            color: var(--color-terracota);
+            letter-spacing: -0.3px;
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .product-price .old-price {
+            font-size: 0.65em;
+            color: #888;
+            text-decoration: line-through;
+            font-weight: 400;
+        }
+
+        /* --- PAÍS + FECHA EXP (fila inferior) --- */
+        .country-flag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: clamp(0.65rem, 1.8vh, 0.85rem);
+            font-weight: 500;
+            color: var(--color-ink);
+            background: rgba(0, 0, 0, 0.02);
+            padding: 2px 10px 2px 6px;
+            border-radius: 40px;
+        }
+
+        .country-flag img {
+            width: clamp(18px, 2.5vh, 26px);
+            height: clamp(18px, 2.5vh, 26px);
+            object-fit: contain;
+            border-radius: 4px;
+        }
+
+        .exp {
+            font-size: clamp(0.6rem, 1.6vh, 0.8rem);
+            color: #4a4a4a;
+            background: rgba(0, 0, 0, 0.02);
+            padding: 2px 10px;
+            border-radius: 40px;
+            font-weight: 400;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer-note {
+            text-align: center;
+            height: 10vh;
+            min-height: 90px;
+            max-height: 120px;
+            padding: 16px 16px 14px;
+            font-size: clamp(0.7rem, 1.8vh, 0.95rem);
+            color: var(--color-green);
+            border-top: 3px solid var(--color-ink);
+            background: var(--color-cream);
+            margin-top: 10px;
+            letter-spacing: 0.2px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .footer-note .social-media {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 12px 20px;
+            font-size: clamp(0.8rem, 2.2vh, 1.2rem);
+        }
+
+        .footer-note .social-media a {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.2s;
+        }
+
+        .footer-note .social-media a:hover {
+            opacity: 0.7;
+        }
+
+        .footer-note .social-media img {
+            width: clamp(22px, 3.5vh, 34px);
+            height: clamp(22px, 3.5vh, 34px);
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .whatsapp {
+            color: #25D366;
+        }
+        .instagram {
+            color: #C13584;
+        }
+
+        /* ===== COLORES POR CATEGORÍA ===== */
+        .CERVEZAS { background-color: #E8A838; color: #1A2C2A; }
+        .BEB_ALCOHOLICAS { background-color: #2C3E50; color: #EDE8DF; }
+        .ACEITES { background-color: #C49A6C; color: #1A2C2A; }
+        .ADEREZOS { background-color: #C0392B; color: #EDE8DF; }
+        .AGUAS { background-color: #3498DB; color: #EDE8DF; }
+        .CAFE { background-color: #6F4E37; color: #EDE8DF; }
+        .CARNICOS { background-color: #A93226; color: #EDE8DF; }
+        .CEREALES { background-color: #D4A017; color: #1A2C2A; }
+        .CIGARROS { background-color: #8B4513; color: #EDE8DF; }
+        .CONFITURAS { background-color: #D4A017; color: #1A2C2A; }
+        .CONGELADOS { background-color: #5DADE2; color: #1A2C2A; }
+        .CONSERVAS { background-color: #7F8C8D; color: #EDE8DF; }
+        .EMBUTIDOS { background-color: #B03A2E; color: #EDE8DF; }
+        .ESPECIAS { background-color: #27AE60; color: #EDE8DF; }
+        .FRUTAS { background-color: #E67E22; color: #1A2C2A; }
+        .GRANOS { background-color: #8B7D3C; color: #EDE8DF; }
+        .HELADOS { background-color: #F5B7B1; color: #1A2C2A; }
+        .HIGIENE_HOGAR { background-color: #48C9B0; color: #1A2C2A; }
+        .HIGIENE_PERSONAL { background-color: #5D6D7E; color: #EDE8DF; }
+        .JUGOS { background-color: #E67E22; color: #1A2C2A; }
+        .LACTEOS { background-color: #FDFEFE; color: #1A2C2A; border: 1px solid #D5D8DC; }
+        .PANADERIA { background-color: #D4A017; color: #1A2C2A; }
+        .PASTAS { background-color: #F5CBA7; color: #1A2C2A; }
+        .PESCADOS { background-color: #5DADE2; color: #1A2C2A; }
+        .REFRESCOS { background-color: #E74C3C; color: #EDE8DF; }
+        .REPOSTERIA { background-color: #F5B7B1; color: #1A2C2A; }
+        .SNACKS { background-color: #E59866; color: #1A2C2A; }
+        .SOPAS { background-color: #D35400; color: #EDE8DF; }
+        .UTILES { background-color: #7F8C8D; color: #EDE8DF; }
+        .VINOS { background-color: #8E1B3C; color: #EDE8DF; }
+
+        /* ===== RESPONSIVE (móviles) ===== */
+        @media (max-width: 640px) {
+            .top-bar {
+                padding: 0 14px;
+                min-height: 56px;
+            }
+            .top-bar .icon-logo img {
+                width: 7vh;
+                height: 7vh;
+                max-width: 44px;
+                max-height: 44px;
+            }
+            .top-bar .market-name {
+                font-size: clamp(1.2rem, 4.5vh, 1.6rem);
+            }
+
+            .product-grid {
+                padding: 14px 10px 30px;
+                gap: 16px 12px;
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+
+            .product-info {
+                padding: 12px 10px 14px;
+                gap: 4px;
+            }
+
+            .product-name {
+                font-size: clamp(0.9rem, 2.8vh, 1.1rem);
+                min-height: 2.4rem;
+            }
+
+            .product-price {
+                font-size: clamp(1.1rem, 4.2vh, 1.6rem);
+                gap: 6px;
+            }
+
+            .product-category,
+            .product-unit {
+                font-size: clamp(0.55rem, 1.6vh, 0.75rem);
+                padding: 1px 8px 1px 4px;
+            }
+
+            .product-category img,
+            .product-unit img {
+                width: 16px;
+                height: 16px;
+            }
+
+            .country-flag,
+            .exp {
+                font-size: clamp(0.5rem, 1.4vh, 0.7rem);
+                padding: 1px 8px;
+            }
+
+            .country-flag img {
+                width: 14px;
+                height: 14px;
+            }
+
+            .footer-note {
+                min-height: 80px;
+                padding: 12px 12px 10px;
+                gap: 2px;
+            }
+
+            .footer-note .social-media {
+                gap: 10px 16px;
+                font-size: clamp(0.7rem, 2vh, 0.9rem);
+            }
+
+            .footer-note .social-media img {
+                width: 20px;
+                height: 20px;
+            }
+
+            .cu {
+                gap: 4px 8px;
+            }
+        }
+
+        /* Ajuste extra para pantallas muy pequeñas */
+        @media (max-width: 400px) {
+            .product-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 12px 8px;
+                padding: 10px 6px 20px;
+            }
+
+            .product-info {
+                padding: 8px 6px 10px;
+            }
+
+            .product-name {
+                font-size: 0.8rem;
+                min-height: 2rem;
+            }
+
+            .product-price {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
-    <!-- ===== BARRA SUPERIOR ===== -->
+	<!-- ===== BARRA SUPERIOR ===== -->
     <header class="top-bar" role="banner">
-        <div class="icon-logo">
-            <img src="img/logo.png" alt="AQM-logo">
-        </div>
+        <div class="icon-logo"><img src="img/logo.png" alt="AQM-logo"></div>
         <div class="market-name">AquiMismo!</div>
     </header>
-    <!-- ===== GRID DE PRODUCTOS ===== -->
+	<!-- ===== GRID DE PRODUCTOS ===== -->
     <main class="product-grid" role="main" aria-label="Productos del mercado" id="productGrid"></main>
     <!-- ===== FOOTER ===== -->
     <footer class="footer-note">
-        <div class="social-media">
+		<div class="social-media">
             <a class="whatsapp" href="">
                 <img src="img/whatsapp-logo.png" alt="WhatsApp-logo">WHATSAPP
             </a>
@@ -59,16 +480,13 @@
                 <img src="img/instagram-logo.png" alt="Instagram-logo">INSTAGRAM
             </a>
         </div>
-        <div class="copyright">
-            Mercados AquiMismo!<br>Copyright 2026, AquiMismo T.C.P (AQM)<br>Todos los Derechos Reservados
-        </div>
+		<div>Mercados AquiMismo!<br>&copy Copyright 2026, AquiMismo T.C.P (AQM!)<br>Todos los Derechos Reservados</div>
     </footer>
-    <script src="data/products.js"></script>
-    <script>
+	<script src="data/products.js"></script>
+	<script>
         (function() {
-            'use strict';
             const grid = document.getElementById('productGrid');
-            
+
             function renderizarProductos() {
                 try {
                     // Verificar que los datos existan
@@ -76,70 +494,71 @@
                         grid.innerHTML = `<div class="status-message">Error: No se pudieron cargar los productos.</div>`;
                         return;
                     }
-                    
+
                     const productos = productosData.PRODUCTS;
-                    
-                    if (!productos || productos.length === 0) {
+
+                    // FILTRO 1: Solo productos activos (isActive !== false)
+                    const productosActivos = productos.filter(prod => prod.IS_ACTIVE !== false);
+
+                    if (!productosActivos || productosActivos.length === 0) {
                         grid.innerHTML = `<div class="status-message">No hay productos disponibles en este momento.</div>`;
                         return;
                     }
-                    
+
                     grid.innerHTML = '';
-                    productos.forEach(prod => {
+
+                    productosActivos.forEach(prod => {
                         const id = prod.ID || '';
-                        const nombre = prod.NAME || 'Nombre no disponible';
-                        const precio = prod.STANDARD_PRICE || 0;
-                        const precioRebaja = prod.OFERT_PRICE || 0;
                         const categoria = prod.CATEGORY || '';
-                        const esOferta = prod.IS_OFERT === true || (precioRebaja > 0 && precioRebaja < precio);
-                        
-                        // Ícono según categoría
-                        let icono = 'fa-box';
-                        const catLower = (categoria || '').toLowerCase();
-                        if (catLower.includes('cervezas')) icono = 'fa-beer';
-                        else if (catLower.includes('bebidas alcohólicas')) icono = 'fa-wine-bottle';
-                        else if (catLower.includes('bebidas')) icono = 'fa-wine-bottle';
-                        
-                        // Verificar si tiene precio anterior
-                        const tienePrecioAnterior = precioRebaja > 0 && precioRebaja < precio;
-                        
+                        const unidad = prod.UNIT || '';
+                        const nombre = prod.NAME || '';
+                        const caddate = prod.EXPIRE_DATE || '';
+                        const pais = prod.COUNTRY || '';
+                        const precioRebaja = prod.OFERT_PRICE || 0;
+                        const precio = prod.STANDARD_PRICE || 0;
+                        const isOfert = prod.IS_OFERT === true;
+
+                        // FILTRO 2: Si la fecha es "0000-00-00", no mostrar caducidad
+                        const mostrarExp = caddate && caddate !== '0000-00-00';
+
                         const card = document.createElement('article');
                         card.className = 'product-card';
-                        
-                        let offerHtml = '';
-                        if (esOferta) {
-                            offerHtml = `<span class="offer-tag"><i class="fas fa-tag"></i> Oferta</span>`;
-                        }
-                        
-                        const precioFormateado = precio.toFixed(2);
-                        const precioAntFormateado = precioRebaja > 0 ? precioRebaja.toFixed(2) : '';
-                        
+
                         card.innerHTML = `
-                            ${offerHtml}
                             <div class="product-image">
-                                <div class="photo-placeholder">
-                                    <i class="fas ${icono}"></i>
-                                    <span class="product-id">${id ? '#' + String(id).padStart(6, '0') : ''}</span>
-                                </div>
+                                <img src="img/product_icon/${String(id).padStart(6, '0')}.png" alt="${nombre}" loading="lazy">
                             </div>
                             <div class="product-info">
                                 <h3 class="product-name">${nombre}</h3>
-                                <div class="product-price">
-                                    $${precioFormateado}
-                                    ${tienePrecioAnterior ? `<span class="old-price">$${precioAntFormateado}</span>` : ''}
+                                <div class="cu">
+                                    <span class="product-category ${categoria}">
+                                        <img src="img/icon/${categoria}.png" alt="${categoria}">${categoria}
+                                    </span>
+                                    <span class="product-unit">
+                                        <img src="img/icon/${unidad}.png" alt="${unidad}">${unidad}
+                                    </span>
                                 </div>
-                                ${categoria ? `<span class="product-category">${categoria}</span>` : ''}
+                                <div class="product-price">
+                                    ${precio} CUP
+                                    ${isOfert ? `<span class="old-price">${precioRebaja}</span>` : ''}
+                                </div>
+                                <div class="cu">
+                                    <span class="country-flag">
+                                        <img src="img/icon/${pais}.png" alt="${pais}">${pais}
+                                    </span>
+                                    ${mostrarExp ? `<span class="exp">EXP: ${caddate}</span>` : ''}
+                                </div>
                             </div>
                         `;
-                        
                         grid.appendChild(card);
                     });
+
                 } catch (error) {
                     console.error('Error al renderizar productos:', error);
                     grid.innerHTML = `<div class="status-message">Error al cargar los productos. Por favor, recarga la página.</div>`;
                 }
             }
-            
+
             // Ejecutar cuando el DOM esté listo
             if (document.readyState === 'loading') {
                 document.addEventListener('DOMContentLoaded', renderizarProductos);
