@@ -174,7 +174,7 @@ const productosData = {
             "CATEGORY": "CONSERVAS & ENLATADOS",
             "UNIT": "LATA",
             "NAME": "Pasta Tomate MANSANA ROJA 210g",
-            "EXPIRE_DATE": "2027-05-18",
+            "EXPIRE_DATE": "2028-05-18",
             "COUNTRY": "CHINA",
             "OFERT_PRICE": 0,
             "STANDARD_PRICE": 520,
