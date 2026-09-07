@@ -520,13 +520,20 @@
 
                         // FILTRO 2: Si la fecha es "0000-00-00", no mostrar caducidad
                         const mostrarExp = caddate && caddate !== '0000-00-00';
-
+                        
+                        let ImageId;
+                        if(id && id > 0){
+                            ImageId = String(id).padStart(6, '0');
+                        } else {
+                            ImageId = "000001;
+                        }
+                        
                         const card = document.createElement('article');
                         card.className = 'product-card';
 
                         card.innerHTML = `
                             <div class="product-image">
-                                <img src="img/product_icon/${String(id).padStart(6, '0')}.png" alt="${nombre}" loading="lazy">
+                                <img src="img/product_icon/${ImageId}.png" alt="${nombre}" loading="lazy">
                             </div>
                             <div class="product-info">
                                 <h3 class="product-name">${nombre}</h3>
