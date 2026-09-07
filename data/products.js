@@ -246,6 +246,71 @@ const productosData = {
             "IS_OFERT": false,
             "IS_NEW": false,
             "IS_ACTIVE": true
+        },
+        {
+            "ID": "000020",
+            "CATEGORY": "LACTEOS",
+            "UNIT": "UNIDAD",
+            "NAME": "Yogurt VIMA 100g (Sabor Natural)",
+            "EXPIRE_DATE": "2027-02-12",
+            "COUNTRY": "ESPAÑA",
+            "OFERT_PRICE": 0,
+            "STANDARD_PRICE": 420,
+            "IS_OFERT": false,
+            "IS_NEW": false,
+            "IS_ACTIVE": true
+        },
+        {
+            "ID": "000021",
+            "CATEGORY": "LACTEOS",
+            "UNIT": "UNIDAD",
+            "NAME": "Yogurt VIMA 100g (Sabor Macedonia)",
+            "EXPIRE_DATE": "2027-02-12",
+            "COUNTRY": "ESPAÑA",
+            "OFERT_PRICE": 0,
+            "STANDARD_PRICE": 420,
+            "IS_OFERT": false,
+            "IS_NEW": false,
+            "IS_ACTIVE": true
+        },
+        {
+            "ID": "000022",
+            "CATEGORY": "LACTEOS",
+            "UNIT": "UNIDAD",
+            "NAME": "Yogurt VIMA 100g (Sabor Plátano)",
+            "EXPIRE_DATE": "2027-02-12",
+            "COUNTRY": "ESPAÑA",
+            "OFERT_PRICE": 0,
+            "STANDARD_PRICE": 420,
+            "IS_OFERT": false,
+            "IS_NEW": false,
+            "IS_ACTIVE": true
+        },
+        {
+            "ID": "000023",
+            "CATEGORY": "CONFITURAS",
+            "UNIT": "UNIDAD",
+            "NAME": "Galleta Cookie MARILAN 60g (Original)",
+            "EXPIRE_DATE": "2027-06-11",
+            "COUNTRY": "BRASIL",
+            "OFERT_PRICE": 0,
+            "STANDARD_PRICE": 430,
+            "IS_OFERT": false,
+            "IS_NEW": false,
+            "IS_ACTIVE": true
+        },
+        {
+            "ID": "000024",
+            "CATEGORY": "CONFITURAS",
+            "UNIT": "UNIDAD",
+            "NAME": "Galleta Cookie MARILAN 60g (Chocolate)",
+            "EXPIRE_DATE": "2027-06-11",
+            "COUNTRY": "BRASIL",
+            "OFERT_PRICE": 0,
+            "STANDARD_PRICE": 430,
+            "IS_OFERT": false,
+            "IS_NEW": false,
+            "IS_ACTIVE": true
         }
     ]
 };
