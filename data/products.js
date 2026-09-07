@@ -1,7 +1,7 @@
 const productosData = {
     "PRODUCTS": [
         {
-            "ID": 000001,
+            "ID": "000001",
             "CATEGORY": "CERVEZAS",
             "UNIT": "LATA",
             "NAME": "Cerveza La Bala 330ml",
@@ -14,7 +14,7 @@ const productosData = {
             "IS_ACTIVE": false
         },
         {
-            "ID": 000002,
+            "ID": "000002",
             "CATEGORY": "BEB_ALCOHOLICAS",
             "UNIT": "BOTELLA",
             "NAME": "Whisky John Mail 1L (Red)",
@@ -27,7 +27,7 @@ const productosData = {
             "IS_ACTIVE": true
         },
         {
-            "ID": 000003,
+            "ID": "000003",
             "CATEGORY": "SOPAS & CALDOS",
             "UNIT": "UNIDAD",
             "NAME": "Sopa Instantánea MIRIKO 65g (Sabor Cerdo)",
@@ -40,7 +40,7 @@ const productosData = {
             "IS_ACTIVE": true
         },
         {
-            "ID": 000004,
+            "ID": "000004",
             "CATEGORY": "SOPAS & CALDOS",
             "UNIT": "UNIDAD",
             "NAME": "Sopa Instantánea MIRIKO 65g (Sabor Pollo)",
@@ -53,7 +53,7 @@ const productosData = {
             "IS_ACTIVE": true
         },
         {
-            "ID": 000005,
+            "ID": "000005",
             "CATEGORY": "SOPAS & CALDOS",
             "UNIT": "UNIDAD",
             "NAME": "Sopa Instantánea MIRIKO 65g (Sabor Res)",
@@ -66,7 +66,7 @@ const productosData = {
             "IS_ACTIVE": true
         },
         {
-            "ID": 000006,
+            "ID": "000006",
             "CATEGORY": "CONSERVAS & ENLATADOS",
             "UNIT": "UNIDAD",
             "NAME": "Aceitunas s/Hueso FRAGATA 160g",
@@ -79,7 +79,7 @@ const productosData = {
             "IS_ACTIVE": true
         },
         {
-            "ID": 000007,
+            "ID": "000007",
             "CATEGORY": "ADEREZOS & SALSAS",
             "UNIT": "UNIDAD",
             "NAME": "Mayonesa CELORRIO 500g",
@@ -92,7 +92,7 @@ const productosData = {
             "IS_ACTIVE": true
         },
         {
-            "ID": 000008,
+            "ID": "000008",
             "CATEGORY": "ESPECIAS & CONDIMENTOS",
             "UNIT": "UNIDAD",
             "NAME": "Sazón Pollo MARWA 10g",
@@ -105,7 +105,7 @@ const productosData = {
             "IS_ACTIVE": true
         },
         {
-            "ID": 000009,
+            "ID": "000009",
             "CATEGORY": "ESPECIAS & CONDIMENTOS",
             "UNIT": "UNIDAD",
             "NAME": "Cubito Pollo MARWA 10g",
@@ -118,7 +118,7 @@ const productosData = {
             "IS_ACTIVE": true
         },
 		{
-            "ID": 000010,
+            "ID": "000010",
             "CATEGORY": "PASTAS",
             "UNIT": "UNIDAD",
             "NAME": "Spaghettis ANI 500g",
@@ -131,7 +131,7 @@ const productosData = {
             "IS_ACTIVE": true
         },
 		{
-            "ID": 000011,
+            "ID": "000011",
             "CATEGORY": "GRANOS & LEGUMBRES",
             "UNIT": "UNIDAD",
             "NAME": "Frijol Negro MALU 1kg",
@@ -144,7 +144,7 @@ const productosData = {
             "IS_ACTIVE": true
         },
 		{
-            "ID": 000012,
+            "ID": "000012",
             "CATEGORY": "GRANOS & LEGUMBRES",
             "UNIT": "UNIDAD",
             "NAME": "Arroz EL REY 1kg",
@@ -157,7 +157,7 @@ const productosData = {
             "IS_ACTIVE": false
         },
 		{
-            "ID": 000013,
+            "ID": "000013",
             "CATEGORY": "CONFITURAS",
             "UNIT": "UNIDAD",
             "NAME": "Sorbeto MARILAN 70g (Sabor Limón)",
@@ -170,7 +170,7 @@ const productosData = {
             "IS_ACTIVE": true
         },
 		{
-            "ID": 000014,
+            "ID": "000014",
             "CATEGORY": "CONSERVAS & ENLATADOS",
             "UNIT": "LATA",
             "NAME": "Pasta Tomate MANSANA ROJA 210g",
@@ -183,7 +183,7 @@ const productosData = {
             "IS_ACTIVE": true
         },
 		{
-            "ID": 000015,
+            "ID": "000015",
             "CATEGORY": "UTILES HOGAR",
             "UNIT": "UNIDAD",
             "NAME": "Bolsa VIMA",
@@ -196,7 +196,7 @@ const productosData = {
             "IS_ACTIVE": true
         },
 		{
-            "ID": 000016,
+            "ID": "000016",
             "CATEGORY": "CONFITURAS",
             "UNIT": "UNIDAD",
             "NAME": "Galleta Cream Cracker RENATA 170g",
@@ -209,7 +209,7 @@ const productosData = {
             "IS_ACTIVE": true
         },
 		{
-            "ID": 000017,
+            "ID": "000017",
             "CATEGORY": "REPOSTERIA",
             "UNIT": "UNIDAD",
             "NAME": "Gelatina BOOM 40g (Sabor Naranja)",
@@ -222,7 +222,7 @@ const productosData = {
             "IS_ACTIVE": true
         },
 		{
-            "ID": 000018,
+            "ID": "000018",
             "CATEGORY": "REPOSTERIA",
             "UNIT": "UNIDAD",
             "NAME": "Gelatina BOOM 40g (Sabor Fresa)",
@@ -235,7 +235,7 @@ const productosData = {
             "IS_ACTIVE": true
         },
 		{
-            "ID": 000019,
+            "ID": "000019",
             "CATEGORY": "CONSERVAS & ENLATADOS",
             "UNIT": "LATA",
             "NAME": "Pasta Tomate +KEKOU 400g",
