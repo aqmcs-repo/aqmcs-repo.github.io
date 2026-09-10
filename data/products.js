@@ -528,7 +528,7 @@ const productosData = {
 			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
-			"NAME": "Galleta Panadera Salada",
+			"NAME": "Galleta Panadera Salada ",
 			"OFERT_PRICE": 0,
 			"STANDARD_PRICE": 1100,
 			"UNIT": "UNIDAD"
@@ -674,6 +674,32 @@ const productosData = {
 			"NAME": "Galleta TWINNIES 23g (Sabor Fresa)",
 			"OFERT_PRICE": 0,
 			"STANDARD_PRICE": 120,
+			"UNIT": "UNIDAD"
+		},
+		{
+			"CATEGORY": "CONFITURAS",
+			"COUNTRY": "INDIA",
+			"EXPIRE_DATE": "2028-12-05",
+			"ID": "000053",
+			"IS_ACTIVE": 1,
+			"IS_NEW": 0,
+			"IS_OFERT": 0,
+			"NAME": "Galleta SaltiBlocks CASTELLUM 85g (1U)",
+			"OFERT_PRICE": 0,
+			"STANDARD_PRICE": 300,
+			"UNIT": "UNIDAD"
+		},
+		{
+			"CATEGORY": "CONFITURAS",
+			"COUNTRY": "INDIA",
+			"EXPIRE_DATE": "2028-12-05",
+			"ID": "000054",
+			"IS_ACTIVE": 1,
+			"IS_NEW": 0,
+			"IS_OFERT": 0,
+			"NAME": "Galleta SaltiBlocks CASTELLUM 595g",
+			"OFERT_PRICE": 0,
+			"STANDARD_PRICE": 2100,
 			"UNIT": "UNIDAD"
 		}
 	]
