@@ -476,7 +476,7 @@
             <a class="whatsapp" href="https://chat.whatsapp.com/BTgwKZbaSFKL9EYCdNAYpV">
                 <img src="img/whatsapp-logo.png" alt="WhatsApp-logo">WHATSAPP
             </a>
-            <a class="instagram" href="">
+            <a class="instagram" href="https://www.instagram.com/aquimismo_official?stkn=MWJsZzVkZnAzZzZmMg==">
                 <img src="img/instagram-logo.png" alt="Instagram-logo">INSTAGRAM
             </a>
         </div>
@@ -498,8 +498,24 @@
                     const productos = productosData.PRODUCTS;
 
                     // FILTRO 1: Solo productos activos (isActive !== false)
-                    const productosActivos = productos.filter(prod => prod.IS_ACTIVE !== 0);
-
+                    const productosActivos = productos
+                    .filter(prod => prod.IS_ACTIVE !== 0)
+                    .sort((a, b) => {
+                        // 1. Ordenar por categoría (alfabéticamente)
+                        const catA = (a.CATEGORY || '').toUpperCase();
+                        const catB = (b.CATEGORY || '').toUpperCase();
+                        if (catA < catB) return -1;
+                        if (catA > catB) return 1;
+                
+                        // 2. Si la categoría es la misma, ordenar por nombre (alfabéticamente)
+                        const nomA = (a.NAME || '').toUpperCase();
+                        const nomB = (b.NAME || '').toUpperCase();
+                        if (nomA < nomB) return -1;
+                        if (nomA > nomB) return 1;
+                
+                        return 0;
+                    });
+                    
                     if (!productosActivos || productosActivos.length === 0) {
                         grid.innerHTML = `<div class="status-message">No hay productos disponibles en este momento.</div>`;
                         return;
