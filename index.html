@@ -498,7 +498,7 @@
                     const productos = productosData.PRODUCTS;
 
                     // FILTRO 1: Solo productos activos (isActive !== false)
-                    const productosActivos = productos.filter(prod => prod.IS_ACTIVE !== false);
+                    const productosActivos = productos.filter(prod => prod.IS_ACTIVE !== 0);
 
                     if (!productosActivos || productosActivos.length === 0) {
                         grid.innerHTML = `<div class="status-message">No hay productos disponibles en este momento.</div>`;
@@ -516,7 +516,7 @@
                         const pais = prod.COUNTRY || '';
                         const precioRebaja = prod.OFERT_PRICE || 0;
                         const precio = prod.STANDARD_PRICE || 0;
-                        const isOfert = prod.IS_OFERT === true;
+                        const isOfert = prod.IS_OFERT === 1;
 
                         // FILTRO 2: Si la fecha es "0000-00-00", no mostrar caducidad
                         const mostrarExp = caddate && caddate !== '0000-00-00';
