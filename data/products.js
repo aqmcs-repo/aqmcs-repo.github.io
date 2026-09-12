@@ -23,7 +23,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Whisky John Mail 1L (Red)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 3800,
+			"STANDARD_PRICE": 3850,
 			"UNIT": "BOTELLA"
 		},
 		{
@@ -153,7 +153,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Arroz EL REY 1kg",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 850,
+			"STANDARD_PRICE": 900,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -179,7 +179,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Pasta Tomate MANSANA ROJA 210g",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 520,
+			"STANDARD_PRICE": 560,
 			"UNIT": "LATA"
 		},
 		{
@@ -254,9 +254,9 @@ const productosData = {
 			"ID": "000020",
 			"IS_ACTIVE": 0,
 			"IS_NEW": 0,
-			"IS_OFERT": 0,
+			"IS_OFERT": 400,
 			"NAME": "Yogurt VIMA 100g (Sabor Natural)",
-			"OFERT_PRICE": 0,
+			"OFERT_PRICE": 1,
 			"STANDARD_PRICE": 420,
 			"UNIT": "UNIDAD"
 		},
@@ -267,9 +267,9 @@ const productosData = {
 			"ID": "000021",
 			"IS_ACTIVE": 0,
 			"IS_NEW": 0,
-			"IS_OFERT": 0,
+			"IS_OFERT": 400,
 			"NAME": "Yogurt VIMA 100g (Sabor Macedonia)",
-			"OFERT_PRICE": 0,
+			"OFERT_PRICE": 1,
 			"STANDARD_PRICE": 420,
 			"UNIT": "UNIDAD"
 		},
@@ -280,9 +280,9 @@ const productosData = {
 			"ID": "000022",
 			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
-			"IS_OFERT": 0,
+			"IS_OFERT": 400,
 			"NAME": "Yogurt VIMA 100g (Sabor Plátano)",
-			"OFERT_PRICE": 0,
+			"OFERT_PRICE": 1,
 			"STANDARD_PRICE": 420,
 			"UNIT": "UNIDAD"
 		},
@@ -322,7 +322,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Galleta BISLEO",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 230,
+			"STANDARD_PRICE": 240,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -335,7 +335,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Galleta NUKKA Kremali (Sabor Vainilla)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 240,
+			"STANDARD_PRICE": 250,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -348,7 +348,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Galleta NUKKA Kremali (Sabor Chocolate)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 240,
+			"STANDARD_PRICE": 250,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -361,7 +361,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Papel Higienico (1U)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 200,
+			"STANDARD_PRICE": 250,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -382,7 +382,7 @@ const productosData = {
 			"COUNTRY": "CHINA",
 			"EXPIRE_DATE": null,
 			"ID": "000030",
-			"IS_ACTIVE": 1,
+			"IS_ACTIVE": 0,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
 			"NAME": "Malvavisco Panda",
@@ -439,7 +439,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Galleta Milk CASTELLUM 45g",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 180,
+			"STANDARD_PRICE": 190,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -452,7 +452,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Galleta Butter Bliss RAYAN 35g",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 180,
+			"STANDARD_PRICE": 190,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -517,7 +517,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Boca Loka",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 120,
+			"STANDARD_PRICE": 130,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -621,7 +621,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Arroz NABEM 1kg",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 820,
+			"STANDARD_PRICE": 840,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -634,7 +634,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Detergente Polvo DEFA 1kg",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 1520,
+			"STANDARD_PRICE": 1540,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -700,6 +700,84 @@ const productosData = {
 			"NAME": "Galleta SaltiBlocks CASTELLUM 595g",
 			"OFERT_PRICE": 0,
 			"STANDARD_PRICE": 2100,
+			"UNIT": "UNIDAD"
+		},
+		{
+			"CATEGORY": "CONFITURAS",
+			"COUNTRY": "TURKIYE",
+			"EXPIRE_DATE": "2028-06-08",
+			"ID": "000055",
+			"IS_ACTIVE": 1,
+			"IS_NEW": 0,
+			"IS_OFERT": 0,
+			"NAME": "Barra Chocolate Dark WOW",
+			"OFERT_PRICE": 0,
+			"STANDARD_PRICE": 330,
+			"UNIT": "UNIDAD"
+		},
+		{
+			"CATEGORY": "CONFITURAS",
+			"COUNTRY": "TURKIYE",
+			"EXPIRE_DATE": "2028-06-04",
+			"ID": "000056",
+			"IS_ACTIVE": 1,
+			"IS_NEW": 0,
+			"IS_OFERT": 0,
+			"NAME": "Barra Chocolate&Mani MOOISTE",
+			"OFERT_PRICE": 0,
+			"STANDARD_PRICE": 360,
+			"UNIT": "UNIDAD"
+		},
+		{
+			"CATEGORY": "CONFITURAS",
+			"COUNTRY": "TURKIYE",
+			"EXPIRE_DATE": "2028-06-17",
+			"ID": "000057",
+			"IS_ACTIVE": 1,
+			"IS_NEW": 0,
+			"IS_OFERT": 0,
+			"NAME": "Barra TOUCH DUO Deluxe",
+			"OFERT_PRICE": 0,
+			"STANDARD_PRICE": 380,
+			"UNIT": "UNIDAD"
+		},
+		{
+			"CATEGORY": "CONFITURAS",
+			"COUNTRY": "TURKIYE",
+			"EXPIRE_DATE": "2027-10-13",
+			"ID": "000058",
+			"IS_ACTIVE": 1,
+			"IS_NEW": 0,
+			"IS_OFERT": 0,
+			"NAME": "Panque 77 (Chocolate Negro)\n",
+			"OFERT_PRICE": 0,
+			"STANDARD_PRICE": 0,
+			"UNIT": "UNIDAD"
+		},
+		{
+			"CATEGORY": "CONFITURAS",
+			"COUNTRY": "TURKIYE",
+			"EXPIRE_DATE": "2027-10-13",
+			"ID": "000059",
+			"IS_ACTIVE": 1,
+			"IS_NEW": 0,
+			"IS_OFERT": 0,
+			"NAME": "Panque 77 (Chocolate Blanco)",
+			"OFERT_PRICE": 0,
+			"STANDARD_PRICE": 0,
+			"UNIT": "UNIDAD"
+		},
+		{
+			"CATEGORY": "CONFITURAS",
+			"COUNTRY": "TURKIYE",
+			"EXPIRE_DATE": "2027-11-01",
+			"ID": "000060",
+			"IS_ACTIVE": 1,
+			"IS_NEW": 0,
+			"IS_OFERT": 0,
+			"NAME": "Panque Time Cocoa HODOR",
+			"OFERT_PRICE": 0,
+			"STANDARD_PRICE": 240,
 			"UNIT": "UNIDAD"
 		}
 	]
