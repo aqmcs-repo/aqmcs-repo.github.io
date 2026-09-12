@@ -7,6 +7,8 @@
 	<!-- FAVICON -->
 	<link rel="icon" type="img/png" sizes="32x32" href="icon_32x32.png">
 	<link rel="icon" type="img/png" sizes="16x16" href="icon_16x16.png">
+    <!-- SHARE IMG -->
+    
     <style>
 		/* ===== RESET & VARIABLES ===== */
         :root {
@@ -273,9 +275,9 @@
         /* ===== FOOTER ===== */
         .footer-note {
             text-align: center;
-            height: 10vh;
-            min-height: 90px;
-            max-height: 120px;
+            height: 15vh;
+            min-height: 100px;
+            max-height: 140px;
             padding: 16px 16px 14px;
             font-size: clamp(0.7rem, 1.8vh, 0.95rem);
             color: var(--color-green);
@@ -289,7 +291,11 @@
             align-items: center;
             gap: 4px;
         }
-
+        
+        .footer-note .copyright{
+            font-size: clamp(0.5rem, 1.6vh, 0.7rem);
+        }
+        
         .footer-note .social-media {
             display: flex;
             flex-wrap: wrap;
@@ -474,13 +480,14 @@
     <footer class="footer-note">
 		<div class="social-media">
             <a class="whatsapp" href="https://chat.whatsapp.com/BTgwKZbaSFKL9EYCdNAYpV">
-                <img src="img/whatsapp-logo.png" alt="WhatsApp-logo">WHATSAPP
+                <img src="img/whatsapp-logo.png" alt="WhatsApp-logo" loading="lazy">WHATSAPP
             </a>
             <a class="instagram" href="https://www.instagram.com/aquimismo_official?stkn=MWJsZzVkZnAzZzZmMg==">
-                <img src="img/instagram-logo.png" alt="Instagram-logo">INSTAGRAM
+                <img src="img/instagram-logo.png" alt="Instagram-logo" loading="lazy">INSTAGRAM
             </a>
         </div>
-		<div>Mercados AquíMismo!<br>&copy Copyright 2026, AquíMismo T.C.P (AQM!)<br>Todos los Derechos Reservados</div>
+        <div>📍 <b>Ubicación</b>: Calzada E/10 y 12. Vedado</div><br>
+		<div class="copyright">Mercados AquíMismo!<br>&copy Copyright 2026, AquíMismo T.C.P (AQM!)<br>Todos los Derechos Reservados</div>
     </footer>
 	<script src="data/products.js"></script>
 	<script>
