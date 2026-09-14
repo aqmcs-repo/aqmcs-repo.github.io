@@ -127,7 +127,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Spaghettis ANI 500g",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 380,
+			"STANDARD_PRICE": 400,
 			"UNIT": "UNIDAD"
 		},
 		{
