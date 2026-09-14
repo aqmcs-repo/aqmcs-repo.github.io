@@ -356,7 +356,7 @@ const productosData = {
 			"COUNTRY": "EEUU",
 			"EXPIRE_DATE": null,
 			"ID": "000028",
-			"IS_ACTIVE": 1,
+			"IS_ACTIVE": 0,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
 			"NAME": "Papel Higienico (1U)",
@@ -751,7 +751,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Panque 77 (Chocolate Negro)\n",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 0,
+			"STANDARD_PRICE": 210,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -764,7 +764,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Panque 77 (Chocolate Blanco)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 0,
+			"STANDARD_PRICE": 210,
 			"UNIT": "UNIDAD"
 		},
 		{
