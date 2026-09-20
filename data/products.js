@@ -36,7 +36,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Sopa Instantánea MIRIKO 65g (Sabor Cerdo)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 300,
+			"STANDARD_PRICE": 310,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -49,7 +49,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Sopa Instantánea MIRIKO 65g (Sabor Pollo)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 300,
+			"STANDARD_PRICE": 310,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -57,12 +57,12 @@ const productosData = {
 			"COUNTRY": "VIETNAM",
 			"EXPIRE_DATE": "2026-12-16",
 			"ID": "000005",
-			"IS_ACTIVE": 1,
+			"IS_ACTIVE": 0,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
 			"NAME": "Sopa Instantánea MIRIKO 65g (Sabor Res)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 300,
+			"STANDARD_PRICE": 310,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -75,7 +75,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Aceitunas s/Hueso FRAGATA 160g",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 1100,
+			"STANDARD_PRICE": 1200,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -88,7 +88,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Mayonesa CELORRIO 500g",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 2500,
+			"STANDARD_PRICE": 2560,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -127,7 +127,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Spaghettis ANI 500g",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 400,
+			"STANDARD_PRICE": 520,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -166,7 +166,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Sorbeto MARILAN 70g (Sabor Limón)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 400,
+			"STANDARD_PRICE": 450,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -179,7 +179,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Pasta Tomate MANSANA ROJA 210g",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 560,
+			"STANDARD_PRICE": 580,
 			"UNIT": "LATA"
 		},
 		{
@@ -218,7 +218,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Gelatina BOOM 40g (Sabor Naranja)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 350,
+			"STANDARD_PRICE": 380,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -231,7 +231,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Gelatina BOOM 40g (Sabor Fresa)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 350,
+			"STANDARD_PRICE": 380,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -244,7 +244,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Pasta Tomate +KEKOU 400g",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 820,
+			"STANDARD_PRICE": 850,
 			"UNIT": "LATA"
 		},
 		{
@@ -296,7 +296,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Galleta Cookie MARILAN 60g (Original)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 440,
+			"STANDARD_PRICE": 480,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -309,7 +309,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Galleta Cookie MARILAN 60g (Chocolate)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 440,
+			"STANDARD_PRICE": 480,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -369,7 +369,7 @@ const productosData = {
 			"COUNTRY": "EEUU",
 			"EXPIRE_DATE": null,
 			"ID": "000029",
-			"IS_ACTIVE": 1,
+			"IS_ACTIVE": 0,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
 			"NAME": "Jabón Lavar 7AIN 150g",
@@ -406,14 +406,14 @@ const productosData = {
 		{
 			"CATEGORY": "LACTEOS",
 			"COUNTRY": "INDIA",
-			"EXPIRE_DATE": "2026-08-05",
+			"EXPIRE_DATE": "2026-11-06",
 			"ID": "000032",
 			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
 			"NAME": "Leche Condensada CASTELLUM 390g",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 1000,
+			"STANDARD_PRICE": 1050,
 			"UNIT": "LATA"
 		},
 		{
@@ -478,7 +478,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Toallas Húmedas PUGGY 120pcs (Tipo1)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 950,
+			"STANDARD_PRICE": 990,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -491,13 +491,13 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Toallas Húmedas PUGGY 120pcs (Tipo2)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 950,
+			"STANDARD_PRICE": 990,
 			"UNIT": "UNIDAD"
 		},
 		{
 			"CATEGORY": "HIGIENE_PERSONAL",
 			"COUNTRY": "TURKIYE",
-			"EXPIRE_DATE": "0000-00-00",
+			"EXPIRE_DATE": null,
 			"ID": "000039",
 			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
@@ -523,14 +523,14 @@ const productosData = {
 		{
 			"CATEGORY": "PANADERIA",
 			"COUNTRY": "CUBA",
-			"EXPIRE_DATE": "0000-00-00",
+			"EXPIRE_DATE": null,
 			"ID": "000041",
 			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
 			"NAME": "Galleta Panadera Salada ",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 1100,
+			"STANDARD_PRICE": 1150,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -538,12 +538,12 @@ const productosData = {
 			"COUNTRY": "CUBA",
 			"EXPIRE_DATE": "2027-03-18",
 			"ID": "000042",
-			"IS_ACTIVE": 1,
+			"IS_ACTIVE": 0,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
 			"NAME": "Detergente Líquido Multiuso 1L",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 700,
+			"STANDARD_PRICE": 750,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -569,7 +569,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Galleta María CASTELLUM 90g",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 380,
+			"STANDARD_PRICE": 390,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -582,7 +582,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Pasta Tomate RAYAN 400g",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 800,
+			"STANDARD_PRICE": 820,
 			"UNIT": "LATA"
 		},
 		{
@@ -595,7 +595,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Vodka BELLFORT 1L",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 4250,
+			"STANDARD_PRICE": 4320,
 			"UNIT": "BOTELLA"
 		},
 		{
@@ -621,20 +621,20 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Arroz NABEM 1kg",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 840,
+			"STANDARD_PRICE": 880,
 			"UNIT": "UNIDAD"
 		},
 		{
 			"CATEGORY": "HIGIENE_HOGAR",
 			"COUNTRY": "CUBA",
-			"EXPIRE_DATE": "2026-04-20",
+			"EXPIRE_DATE": "2028-04-20",
 			"ID": "000049",
 			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
 			"NAME": "Detergente Polvo DEFA 1kg",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 1540,
+			"STANDARD_PRICE": 1550,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -686,7 +686,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Galleta SaltiBlocks CASTELLUM 85g (1U)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 300,
+			"STANDARD_PRICE": 310,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -699,7 +699,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Galleta SaltiBlocks CASTELLUM 595g",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 2100,
+			"STANDARD_PRICE": 2170,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -712,7 +712,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Barra Chocolate Dark WOW",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 330,
+			"STANDARD_PRICE": 340,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -725,7 +725,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Barra Chocolate&Mani MOOISTE",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 360,
+			"STANDARD_PRICE": 380,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -738,7 +738,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Barra TOUCH DUO Deluxe",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 380,
+			"STANDARD_PRICE": 390,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -777,7 +777,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Panque Time Cocoa HODOR",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 240,
+			"STANDARD_PRICE": 250,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -796,7 +796,7 @@ const productosData = {
 		{
 			"CATEGORY": "ACEITES & VINAGRES",
 			"COUNTRY": "TURKIYE",
-			"EXPIRE_DATE": null,
+			"EXPIRE_DATE": "2027-06-18",
 			"ID": "000062",
 			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
@@ -809,40 +809,40 @@ const productosData = {
 		{
 			"CATEGORY": "CONFITURAS",
 			"COUNTRY": "TURKIYE",
-			"EXPIRE_DATE": null,
+			"EXPIRE_DATE": "2027-02-10",
 			"ID": "000063",
 			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
 			"NAME": "Panque Cocoa PARADISE",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 170,
+			"STANDARD_PRICE": 180,
 			"UNIT": "UNIDAD"
 		},
 		{
 			"CATEGORY": "CONFITURAS",
 			"COUNTRY": "TURKIYE",
-			"EXPIRE_DATE": null,
+			"EXPIRE_DATE": "2027-07-16",
 			"ID": "000064",
 			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
 			"NAME": "Gofibi Pistacho",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 240,
+			"STANDARD_PRICE": 250,
 			"UNIT": "UNIDAD"
 		},
 		{
 			"CATEGORY": "CONFITURAS",
 			"COUNTRY": "TURKIYE",
-			"EXPIRE_DATE": null,
+			"EXPIRE_DATE": "2027-05-27",
 			"ID": "000065",
 			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
 			"NAME": "Galletas Bien KREMALIN",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 270,
+			"STANDARD_PRICE": 280,
 			"UNIT": "UNIDAD"
 		}
 	]
