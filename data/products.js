@@ -509,7 +509,7 @@ const productosData = {
 		},
 		{
 			"CATEGORY": "CONFITURAS",
-			"COUNTRY": "CUBA",
+			"COUNTRY": "CHINA",
 			"EXPIRE_DATE": "2027-08-05",
 			"ID": "000040",
 			"IS_ACTIVE": 1,
