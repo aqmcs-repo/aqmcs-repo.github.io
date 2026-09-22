@@ -751,7 +751,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Panque 77 (Chocolate Negro)\n",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 210,
+			"STANDARD_PRICE": 220,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -764,7 +764,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Panque 77 (Chocolate Blanco)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 210,
+			"STANDARD_PRICE": 220,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -809,7 +809,7 @@ const productosData = {
 		{
 			"CATEGORY": "CONFITURAS",
 			"COUNTRY": "TURKIYE",
-			"EXPIRE_DATE": "2027-02-10",
+			"EXPIRE_DATE": "2027-02-09",
 			"ID": "000063",
 			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
