@@ -548,13 +548,13 @@ const productosData = {
 		},
 		{
 			"CATEGORY": "ESPECIAS & CONDIMENTOS",
-			"COUNTRY": "CUBA",
+			"COUNTRY": "COLOMBIA",
 			"EXPIRE_DATE": "2027-03-18",
 			"ID": "000043",
 			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
-			"NAME": "Sazón FRESKO",
+			"NAME": "Sazón FRESKO 15g",
 			"OFERT_PRICE": 0,
 			"STANDARD_PRICE": 100,
 			"UNIT": "UNIDAD"
