@@ -18,10 +18,10 @@ const productosData = {
 			"COUNTRY": "BELGICA",
 			"EXPIRE_DATE": null,
 			"ID": "000002",
-			"IS_ACTIVE": 1,
+			"IS_ACTIVE": 0,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
-			"NAME": "Whisky John Mail 1L (Red)",
+			"NAME": "Whisky John Mail 1L (Red 40% Alc.)",
 			"OFERT_PRICE": 0,
 			"STANDARD_PRICE": 3850,
 			"UNIT": "BOTELLA"
@@ -146,14 +146,14 @@ const productosData = {
 		{
 			"CATEGORY": "GRANOS & LEGUMBRES",
 			"COUNTRY": "GUYANA",
-			"EXPIRE_DATE": "2026-07-30",
+			"EXPIRE_DATE": "2027-07-30",
 			"ID": "000012",
-			"IS_ACTIVE": 0,
+			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
 			"NAME": "Arroz EL REY 1kg",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 900,
+			"STANDARD_PRICE": 880,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -359,7 +359,7 @@ const productosData = {
 			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
-			"NAME": "Papel Higienico (1U)",
+			"NAME": "Papel Higiénico (1U)",
 			"OFERT_PRICE": 0,
 			"STANDARD_PRICE": 220,
 			"UNIT": "UNIDAD"
@@ -593,7 +593,7 @@ const productosData = {
 			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
-			"NAME": "Vodka BELLFORT 1L",
+			"NAME": "Vodka BELLFORT 1L (37.5% Alc.)",
 			"OFERT_PRICE": 0,
 			"STANDARD_PRICE": 4320,
 			"UNIT": "BOTELLA"
@@ -616,7 +616,7 @@ const productosData = {
 			"COUNTRY": "BRASIL",
 			"EXPIRE_DATE": "2027-03-31",
 			"ID": "000048",
-			"IS_ACTIVE": 1,
+			"IS_ACTIVE": 0,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
 			"NAME": "Arroz NABEM 1kg",
@@ -629,7 +629,7 @@ const productosData = {
 			"COUNTRY": "CUBA",
 			"EXPIRE_DATE": "2028-04-20",
 			"ID": "000049",
-			"IS_ACTIVE": 1,
+			"IS_ACTIVE": 0,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
 			"NAME": "Detergente Polvo DEFA 1kg",
@@ -684,7 +684,7 @@ const productosData = {
 			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
-			"NAME": "Galleta SaltiBlocks CASTELLUM 85g (1U)",
+			"NAME": "Galleta Soda SaltiBlocks CASTELLUM 85g (1U)",
 			"OFERT_PRICE": 0,
 			"STANDARD_PRICE": 310,
 			"UNIT": "UNIDAD"
@@ -697,7 +697,7 @@ const productosData = {
 			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
-			"NAME": "Galleta SaltiBlocks CASTELLUM 595g",
+			"NAME": "Galleta Soda SaltiBlocks CASTELLUM 595g",
 			"OFERT_PRICE": 0,
 			"STANDARD_PRICE": 2170,
 			"UNIT": "UNIDAD"
@@ -720,10 +720,10 @@ const productosData = {
 			"COUNTRY": "TURKIYE",
 			"EXPIRE_DATE": "2028-06-04",
 			"ID": "000056",
-			"IS_ACTIVE": 1,
+			"IS_ACTIVE": 0,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
-			"NAME": "Barra Chocolate&Mani MOOISTE",
+			"NAME": "Barra Chocolate&Maní MOOISTE",
 			"OFERT_PRICE": 0,
 			"STANDARD_PRICE": 380,
 			"UNIT": "UNIDAD"
@@ -749,7 +749,7 @@ const productosData = {
 			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
-			"NAME": "Panque 77 (Chocolate Negro)\n",
+			"NAME": "Panqué 77 (Chocolate Negro)",
 			"OFERT_PRICE": 0,
 			"STANDARD_PRICE": 220,
 			"UNIT": "UNIDAD"
@@ -762,7 +762,7 @@ const productosData = {
 			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
-			"NAME": "Panque 77 (Chocolate Blanco)",
+			"NAME": "Panqué 77 (Chocolate Blanco)",
 			"OFERT_PRICE": 0,
 			"STANDARD_PRICE": 220,
 			"UNIT": "UNIDAD"
@@ -775,7 +775,7 @@ const productosData = {
 			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
-			"NAME": "Panque Time Cocoa HODOR",
+			"NAME": "Panqué Time Cocoa HODOR",
 			"OFERT_PRICE": 0,
 			"STANDARD_PRICE": 250,
 			"UNIT": "UNIDAD"
@@ -788,7 +788,7 @@ const productosData = {
 			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
-			"NAME": "Whisky 5 SHOT 90ml",
+			"NAME": "Whisky 5 SHOT 90ml (40% Alc.)",
 			"OFERT_PRICE": 0,
 			"STANDARD_PRICE": 500,
 			"UNIT": "UNIDAD"
@@ -801,7 +801,7 @@ const productosData = {
 			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
-			"NAME": "Aceite Girasol DONA NORA 900ml",
+			"NAME": "Aceite Girasol DOÑA NORA 900ml",
 			"OFERT_PRICE": 0,
 			"STANDARD_PRICE": 3500,
 			"UNIT": "UNIDAD"
@@ -814,7 +814,7 @@ const productosData = {
 			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
-			"NAME": "Panque Cocoa PARADISE",
+			"NAME": "Panqué Cocoa/Vainilla PARADISE",
 			"OFERT_PRICE": 0,
 			"STANDARD_PRICE": 180,
 			"UNIT": "UNIDAD"
@@ -827,7 +827,7 @@ const productosData = {
 			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
-			"NAME": "Gofibi Pistacho",
+			"NAME": "Gofibi Pistacho BONUCCI",
 			"OFERT_PRICE": 0,
 			"STANDARD_PRICE": 250,
 			"UNIT": "UNIDAD"
@@ -895,6 +895,19 @@ const productosData = {
 			"NAME": "Galleta Milk RAYAN 45g",
 			"OFERT_PRICE": 0,
 			"STANDARD_PRICE": 190,
+			"UNIT": "UNIDAD"
+		},
+		{
+			"CATEGORY": "CONFITURAS",
+			"COUNTRY": "TURKIYE",
+			"EXPIRE_DATE": "2027-01-16",
+			"ID": "000070",
+			"IS_ACTIVE": 1,
+			"IS_NEW": 0,
+			"IS_OFERT": 0,
+			"NAME": "Panqué Pistah! BONUCCI",
+			"OFERT_PRICE": 0,
+			"STANDARD_PRICE": 300,
 			"UNIT": "UNIDAD"
 		}
 	]
