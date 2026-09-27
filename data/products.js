@@ -75,7 +75,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Aceitunas s/Hueso FRAGATA 160g",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 1200,
+			"STANDARD_PRICE": 1250,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -88,7 +88,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Mayonesa CELORRIO 500g",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 2560,
+			"STANDARD_PRICE": 2780,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -101,7 +101,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Sazón Pollo MARWA 10g",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 80,
+			"STANDARD_PRICE": 90,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -140,7 +140,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Frijol Negro MALU 1kg",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 1100,
+			"STANDARD_PRICE": 1250,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -148,7 +148,7 @@ const productosData = {
 			"COUNTRY": "GUYANA",
 			"EXPIRE_DATE": "2027-07-30",
 			"ID": "000012",
-			"IS_ACTIVE": 1,
+			"IS_ACTIVE": 0,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
 			"NAME": "Arroz EL REY 1kg",
@@ -179,7 +179,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Pasta Tomate MANSANA ROJA 210g",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 580,
+			"STANDARD_PRICE": 600,
 			"UNIT": "LATA"
 		},
 		{
@@ -192,7 +192,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Bolsa VIMA",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 300,
+			"STANDARD_PRICE": 310,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -205,7 +205,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Galleta Cream Cracker RENATA 170g",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 550,
+			"STANDARD_PRICE": 580,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -296,7 +296,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Galleta Cookie MARILAN 60g (Original)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 480,
+			"STANDARD_PRICE": 490,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -309,7 +309,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Galleta Cookie MARILAN 60g (Chocolate)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 480,
+			"STANDARD_PRICE": 490,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -361,7 +361,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Papel Higiénico (1U)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 220,
+			"STANDARD_PRICE": 230,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -413,7 +413,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Leche Condensada CASTELLUM 390g",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 1050,
+			"STANDARD_PRICE": 1100,
 			"UNIT": "LATA"
 		},
 		{
@@ -517,7 +517,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Boca Loka",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 130,
+			"STANDARD_PRICE": 140,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -525,12 +525,12 @@ const productosData = {
 			"COUNTRY": "CUBA",
 			"EXPIRE_DATE": null,
 			"ID": "000041",
-			"IS_ACTIVE": 1,
+			"IS_ACTIVE": 0,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
 			"NAME": "Galleta Panadera Salada ",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 1150,
+			"STANDARD_PRICE": 1200,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -595,7 +595,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Vodka BELLFORT 1L (37.5% Alc.)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 4320,
+			"STANDARD_PRICE": 4800,
 			"UNIT": "BOTELLA"
 		},
 		{
@@ -608,7 +608,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Leche Evaporada ABORELLE 400g",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 1000,
+			"STANDARD_PRICE": 1020,
 			"UNIT": "LATA"
 		},
 		{
@@ -629,12 +629,12 @@ const productosData = {
 			"COUNTRY": "CUBA",
 			"EXPIRE_DATE": "2028-04-20",
 			"ID": "000049",
-			"IS_ACTIVE": 0,
+			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
 			"NAME": "Detergente Polvo DEFA 1kg",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 1550,
+			"STANDARD_PRICE": 1680,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -712,7 +712,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Barra Chocolate Dark WOW",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 340,
+			"STANDARD_PRICE": 360,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -738,7 +738,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Barra TOUCH DUO Deluxe",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 390,
+			"STANDARD_PRICE": 400,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -777,7 +777,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Panqué Time Cocoa HODOR",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 250,
+			"STANDARD_PRICE": 260,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -790,7 +790,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Whisky 5 SHOT 90ml (40% Alc.)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 500,
+			"STANDARD_PRICE": 550,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -816,7 +816,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Panqué Cocoa/Vainilla PARADISE",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 180,
+			"STANDARD_PRICE": 190,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -829,7 +829,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Gofibi Pistacho BONUCCI",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 250,
+			"STANDARD_PRICE": 270,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -842,7 +842,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Galletas Bien KREMALIN",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 280,
+			"STANDARD_PRICE": 300,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -855,7 +855,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Azúcar ENERGY 1kg",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 1550,
+			"STANDARD_PRICE": 1600,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -881,7 +881,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Sopa Instantánea RAYAN 65g (Sabor Res)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 290,
+			"STANDARD_PRICE": 300,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -900,7 +900,7 @@ const productosData = {
 		{
 			"CATEGORY": "CONFITURAS",
 			"COUNTRY": "TURKIYE",
-			"EXPIRE_DATE": "2027-01-16",
+			"EXPIRE_DATE": "2027-03-30",
 			"ID": "000070",
 			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
@@ -908,6 +908,58 @@ const productosData = {
 			"NAME": "Panqué Pistah! BONUCCI",
 			"OFERT_PRICE": 0,
 			"STANDARD_PRICE": 300,
+			"UNIT": "UNIDAD"
+		},
+		{
+			"CATEGORY": "CIGARROS",
+			"COUNTRY": "CUBA",
+			"EXPIRE_DATE": null,
+			"ID": "000071",
+			"IS_ACTIVE": 1,
+			"IS_NEW": 0,
+			"IS_OFERT": 0,
+			"NAME": "Cigarrillo Rothmans Azul Ice",
+			"OFERT_PRICE": 0,
+			"STANDARD_PRICE": 670,
+			"UNIT": "UNIDAD"
+		},
+		{
+			"CATEGORY": "PASTAS",
+			"COUNTRY": "TURKIYE",
+			"EXPIRE_DATE": "2028-07-14",
+			"ID": "000072",
+			"IS_ACTIVE": 1,
+			"IS_NEW": 0,
+			"IS_OFERT": 0,
+			"NAME": "Spaghetti PASTA ROSSO 500g",
+			"OFERT_PRICE": 0,
+			"STANDARD_PRICE": 730,
+			"UNIT": "UNIDAD"
+		},
+		{
+			"CATEGORY": "PASTAS",
+			"COUNTRY": "TURKIYE",
+			"EXPIRE_DATE": "2027-12-08",
+			"ID": "000073",
+			"IS_ACTIVE": 1,
+			"IS_NEW": 0,
+			"IS_OFERT": 0,
+			"NAME": "Coditos ADA 500g",
+			"OFERT_PRICE": 0,
+			"STANDARD_PRICE": 750,
+			"UNIT": "UNIDAD"
+		},
+		{
+			"CATEGORY": "GRANOS & LEGUMBRES",
+			"COUNTRY": "GUYANA",
+			"EXPIRE_DATE": "2027-05-21",
+			"ID": "000074",
+			"IS_ACTIVE": 1,
+			"IS_NEW": 0,
+			"IS_OFERT": 0,
+			"NAME": "Arroz Grano Largo Guyanes 1kg",
+			"OFERT_PRICE": 0,
+			"STANDARD_PRICE": 900,
 			"UNIT": "UNIDAD"
 		}
 	]
