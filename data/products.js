@@ -852,10 +852,10 @@ const productosData = {
 			"ID": "000066",
 			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
-			"IS_OFERT": 0,
+			"IS_OFERT": 1,
 			"NAME": "Azúcar ENERGY 1kg",
-			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 1600,
+			"OFERT_PRICE": 1600,
+			"STANDARD_PRICE": 1450,
 			"UNIT": "UNIDAD"
 		},
 		{
