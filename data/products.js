@@ -932,8 +932,8 @@ const productosData = {
 			"IS_NEW": 0,
 			"IS_OFERT": 1,
 			"NAME": "Spaghetti PASTA ROSSO 500g",
-			"OFERT_PRICE": 700,
-			"STANDARD_PRICE": 730,
+			"OFERT_PRICE": 730,
+			"STANDARD_PRICE": 700,
 			"UNIT": "UNIDAD"
 		},
 		{
