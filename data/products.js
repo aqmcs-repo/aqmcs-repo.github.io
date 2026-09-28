@@ -930,9 +930,9 @@ const productosData = {
 			"ID": "000072",
 			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
-			"IS_OFERT": 0,
+			"IS_OFERT": 1,
 			"NAME": "Spaghetti PASTA ROSSO 500g",
-			"OFERT_PRICE": 0,
+			"OFERT_PRICE": 700,
 			"STANDARD_PRICE": 730,
 			"UNIT": "UNIDAD"
 		},
