@@ -426,7 +426,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Crema Cacao CASTELLUM 150g (NUTELLA)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 950,
+			"STANDARD_PRICE": 1000,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -551,7 +551,7 @@ const productosData = {
 			"COUNTRY": "COLOMBIA",
 			"EXPIRE_DATE": "2027-03-18",
 			"ID": "000043",
-			"IS_ACTIVE": 1,
+			"IS_ACTIVE": 0,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
 			"NAME": "Sazón FRESKO 15g",
@@ -961,6 +961,19 @@ const productosData = {
 			"OFERT_PRICE": 0,
 			"STANDARD_PRICE": 900,
 			"UNIT": "UNIDAD"
+		},
+		{
+			"CATEGORY": "CIGARROS",
+			"COUNTRY": "CUBA",
+			"EXPIRE_DATE": null,
+			"ID": "000075",
+			"IS_ACTIVE": 1,
+			"IS_NEW": 0,
+			"IS_OFERT": 0,
+			"NAME": "Cigarrillo Rothmans Rojo",
+			"OFERT_PRICE": 0,
+			"STANDARD_PRICE": 700,
+			"UNIT": "UNIDAD"
 		}
 	]
-};
+}
