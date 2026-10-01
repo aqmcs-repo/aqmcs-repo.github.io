@@ -629,7 +629,7 @@ const productosData = {
 			"COUNTRY": "CUBA",
 			"EXPIRE_DATE": "2028-04-20",
 			"ID": "000049",
-			"IS_ACTIVE": 1,
+			"IS_ACTIVE": 0,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
 			"NAME": "Detergente Polvo DEFA 1kg",
