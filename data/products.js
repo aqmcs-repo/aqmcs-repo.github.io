@@ -525,7 +525,7 @@ const productosData = {
 			"COUNTRY": "CUBA",
 			"EXPIRE_DATE": null,
 			"ID": "000041",
-			"IS_ACTIVE": 0,
+			"IS_ACTIVE": 1,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
 			"NAME": "Galleta Panadera Salada ",
