@@ -1,5 +1,5 @@
 const productosData = {
-    "PRODUCTS": [
+	"PRODUCTS": [
 		{
 			"CATEGORY": "CERVEZAS",
 			"COUNTRY": "CUBA",
@@ -973,6 +973,32 @@ const productosData = {
 			"NAME": "Cigarrillo Rothmans Rojo",
 			"OFERT_PRICE": 0,
 			"STANDARD_PRICE": 700,
+			"UNIT": "UNIDAD"
+		},
+		{
+			"CATEGORY": "REPOSTERIA",
+			"COUNTRY": "TURKIYE",
+			"EXPIRE_DATE": "2027-06-19",
+			"ID": "000076",
+			"IS_ACTIVE": 1,
+			"IS_NEW": 0,
+			"IS_OFERT": 0,
+			"NAME": "Harina Trigo GRAN SABOR 1kg",
+			"OFERT_PRICE": 0,
+			"STANDARD_PRICE": 1000,
+			"UNIT": "UNIDAD"
+		},
+		{
+			"CATEGORY": "UTILES HOGAR",
+			"COUNTRY": "EEUU",
+			"EXPIRE_DATE": null,
+			"ID": "000077",
+			"IS_ACTIVE": 1,
+			"IS_NEW": 0,
+			"IS_OFERT": 0,
+			"NAME": "Cepillo Dental",
+			"OFERT_PRICE": 0,
+			"STANDARD_PRICE": 400,
 			"UNIT": "UNIDAD"
 		}
 	]
