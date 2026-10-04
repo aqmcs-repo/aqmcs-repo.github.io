@@ -577,7 +577,7 @@ const productosData = {
 			"COUNTRY": "PANAMA",
 			"EXPIRE_DATE": "2028-05-03",
 			"ID": "000045",
-			"IS_ACTIVE": 1,
+			"IS_ACTIVE": 0,
 			"IS_NEW": 0,
 			"IS_OFERT": 0,
 			"NAME": "Pasta Tomate RAYAN 400g",
@@ -608,7 +608,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Leche Evaporada ABORELLE 400g",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 1020,
+			"STANDARD_PRICE": 1080,
 			"UNIT": "LATA"
 		},
 		{
@@ -751,7 +751,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Panqué 77 (Chocolate Negro)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 220,
+			"STANDARD_PRICE": 230,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -764,7 +764,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Panqué 77 (Chocolate Blanco)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 220,
+			"STANDARD_PRICE": 230,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -850,7 +850,7 @@ const productosData = {
 			"COUNTRY": "BRASIL",
 			"EXPIRE_DATE": "2028-05-28",
 			"ID": "000066",
-			"IS_ACTIVE": 1,
+			"IS_ACTIVE": 0,
 			"IS_NEW": 0,
 			"IS_OFERT": 1,
 			"NAME": "Azúcar ENERGY 1kg",
@@ -920,7 +920,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Cigarrillo Rothmans Azul Ice",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 670,
+			"STANDARD_PRICE": 700,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -985,7 +985,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Harina Trigo GRAN SABOR 1kg",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 1000,
+			"STANDARD_PRICE": 1100,
 			"UNIT": "UNIDAD"
 		},
 		{
