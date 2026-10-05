@@ -868,7 +868,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Pasta Dental COLGATE Advanced White 140g",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 800,
+			"STANDARD_PRICE": 840,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -881,7 +881,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Sopa Instantánea RAYAN 65g (Sabor Res)",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 300,
+			"STANDARD_PRICE": 310,
 			"UNIT": "UNIDAD"
 		},
 		{
@@ -985,7 +985,7 @@ const productosData = {
 			"IS_OFERT": 0,
 			"NAME": "Harina Trigo GRAN SABOR 1kg",
 			"OFERT_PRICE": 0,
-			"STANDARD_PRICE": 1100,
+			"STANDARD_PRICE": 1240,
 			"UNIT": "UNIDAD"
 		},
 		{
